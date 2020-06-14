@@ -1,10 +1,16 @@
 {
-  "name": "users-companies-jobs-solution",
+  "name": "users-companies-jobs",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.4.0",
+    "npm": "6.14.4"
+  },
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "seed": "dropdb jobly && createdb jobly && psql jobly < data.sql"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +25,7 @@
     "jsonwebtoken": "^8.5.0",
     "locus": "^2.0.1",
     "morgan": "^1.9.1",
+    "nodemon": "^2.0.4",
     "pg": "^8.0.3"
   },
   "devDependencies": {
