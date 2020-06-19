@@ -9,7 +9,7 @@ In order to access the actual job search pages:
 1.  Use dummy account: Username (testuser), Password (password)
 2.  Create an account using the signup feature
 
-Troubleshooting some Issues:
+Troubleshooting Heroku Issues:
 
 When doing [heroku pg:psql < data.sql], you may run into some issues with table conflicts.
 If you encounter this issue, it may be because you already have an existing database that is causing
